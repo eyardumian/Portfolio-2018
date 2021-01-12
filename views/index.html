@@ -19,18 +19,18 @@
     <!-- <script src="../js/index.js"></script> -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   </head>
 
     <header>
-      <div class="container">
+      <div class="container" id="home">
       	<nav id="menu">
       		<input type="checkbox" id="toggle-nav"/>
       		<label id="toggle-nav-label" for="toggle-nav"><i class="fas fa-align-right"></i></label>
       		<div class="box">
   	    		<ul>
-  	    			<li><a href="#"><i class="icon-home"></i> Home</a></li>
-  	    			<li><a href="#"><i class="icon-file-alt"></i> About</a></li>
+  	    			<li><a href="#home"><i class="icon-home"></i> Home</a></li>
+  	    			<li><a href="#about"><i class="icon-file-alt"></i> About</a></li>
   	    			<li><a href="#work"><i class="icon-copy"></i> Work</a></li>
   	    			<li><a href="#contact"><i class="icon-envelope"></i> Contact</a></li>
   	    		</ul>
@@ -57,75 +57,74 @@
   </header>
 
     <div id="section07" class="demo">
-      <a href="#work"><span></span><span></span><span></span></a>
+      <a href="#about"><span></span><span></span><span></span></a>
     </div>
 
+    <section class="about" id="about">
+      <div class="aboutTitle">
+        A Little About Me
+      </div>
+      <div class="container">
+      <div class="aboutSection">
+          Hello! My name is Erika Yardumian and I'm a full-stack web-developer, driven to build beautiful web applications. My journey started when I was a K-12 teacher and began to develop websites for my classes. After a few years, it became apparent that my passion for web development surpassed my love for teaching. I began to formalize my education in coding by completing a full-stack web development bootcamp at UCI and am currently attending Auburn University to aquire a BS in Computer Science. I enjoy the challenges of solving the complex problems that coding entails and the satisfaction of producing a polished, functional website. When I'm not coding, you can find me hanging out at the beach with my family or snowboarding down the slopes of Mammoth.
+      </div>
+      <div class="skillIcons">
+          <i class="fab fa-html5 fa-5x"></i>
+          <i class="fab fa-css3 fa-5x"></i>
+      </div>
+      </div>
+    </section>
+    <hr>
     <section class="work" id="work">
       <div class="workTitle">
         FEATURED PROJECTS
       </div>
-      <div class="row workExample">
-        <div class="skew"></div>
-        <div class="col-sm-6 glenThumbnail">
+      <div class="container-fluid">
+      <div class="row workExample row-eq-height">
+        <div class="col-xs-12 col-sm-12 col-md-6 glenThumbnail">
           <img src="../images/glenResponsive2.png" alt="theglenbar.com">
         </div>
-        <div class="col-sm-6 glenAbout">
-          <p>
-          This section is about the glen
-          <br>
-          This section is about the glen
-          <br>
-
-          This section is about the glen
-          <br>
-
-          This section is about the glen
-        </p>
+        <div class="col-xs-12 col-sm-12 col-md-6 description">
+          <div class="insideDescription">
+          <h3 class="websiteTitle"> The Glen </h3>
+          <div class="p"> Responsive website designed for a local food establishment. Made with Wordpress Multisite, CSS, PHP, and MySQL
         </div>
       </div>
-        <div class="row workExample">
-          <div class="skew"></div>
+      <a class="button" href="http://www.theglenbar.com">View Live Site</a>
+      </div>
+      </div>
+      <div class="row workExample row-eq-height">
+        <div class="col-xs-12 col-sm-12 col-md-6 description">
+          <div class="insideDescription">
+          <h3> The Glen </h3>
+          <div class="p"> Responsive website made with Wordpress Multisite, CSS, PHP, and MySQL
+        </div>
+      </div>
+    </div>
+      <div class="col-xs-12 col-sm-12 col-md-6 glenThumbnail">
+        <img src="../images/glenResponsive2.png" alt="theglenbar.com">
+      </div>
+      </div>
+    </div>
 
-          <div class="col-sm-6 glenAbout">
-            <p>
-            This section is about the glen
-            <br>
-            This section is about the glen
-            <br>
-
-            This section is about the glen
-            <br>
-
-            This section is about the glen
-          </p>
-          </div>
-            <div class="col-sm-6 glenThumbnail">
-              <img src="../images/glenTransform.png" alt="theglenbar.com">
-            </div>
-          </div>
-          <div class="row workExample">
-            <div class="skew"></div>
-
-            <div class="col-sm-6 glenThumbnail">
-              <img src="../images/glenTransform1.png" alt="theglenbar.com">
-            </div>
-            <div class="col-sm-6 glenAbout">
-
-              <p>This section is about the glen
-              <br>
-              This section is about the glen
-              <br>
-
-              This section is about the glen
-              <br>
-
-              This section is about the glen
-            </p>
-            </div>
-          </div>
     </section>
 
-    <footer id="contact">
+    <section class="contact" id="contact">
+      <h2 class="contactTitle">Contact</h2>
+      <div class="row">
+        <div class="col-sm-6">
+          Erika Yardumian
+          <br>
+          Anaheim Hills, CA
+          <div id="phone">
+          714-404-2214
+        </div>
+          eyardumian@gmail.com
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer">
       <div class="image2">
       </div>
       <div class="footer"></div>
